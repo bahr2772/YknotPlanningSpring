@@ -1,0 +1,17 @@
+<footer>
+	<div class="footer" id="MainFooter">
+		<div sec:authorize="!hasAuthority('USER_PRIVILEGE')">
+
+			<p>
+				&copy; Yknot Planning 2016 <a href="vendorlogin" id="vendorLinkFoot">Vendor
+					Login </a>
+			</p>
+		</div>
+		<div sec:authorize="hasAuthority('USER_PRIVILEGE')">
+
+			<p>
+				&copy; Yknot Planning 2016 
+			</p>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<link href="../resources/css/bootstrap.css" rel="stylesheet"
+	th:href="@{/resources/css/bootstrap.css}" type="text/css" />
+<link href="../resources/css/bootstrap-responsive.css" rel="stylesheet"
+	th:href="@{/resources/css/bootstrap-respoinsive.css}" type="text/css" />
+
+<title>Yknot Planning: Client</title>
+
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mate+SC" type="text/css"/>
+<link href="../resources/css/style.css" rel="stylesheet"
+	th:href="@{/resources/css/style.css}" type="text/css" />
+
+
+
+</head>
+
+<body>
+
+	<div th:include="header"></div>
+
+	<br />
+
+
+
+	<!-- Page Content -->
+	<div class="container">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-10  col-sm-6 col-md-4 vendorFeed">
+
+					<div class="thumbnail">
+						
+						<div class="caption">
+							<h3 class="businessName">Business Name</h3>
+							<h4>Category</h4>
+							<div id="zipCode">
+								<h6>City: City, State</h6>
+								<h6>Starting Package: $999</h6>
+							</div>
+							<p>
+								<a href="#"
+									class="btn btn-default glyphicon glyphicon-globe" role="button"
+									alt="Website"></a> <a href="mailto:#"
+									class="btn btn-default glyphicon glyphicon-envelope"
+									role="button" alt="Email"></a> <a href="#"
+									class="btn btn-default glyphicon glyphicon-heart-empty"
+									role="button"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<div th:include="footer"></div>
+
+
+
+</body>
+
+</html>
